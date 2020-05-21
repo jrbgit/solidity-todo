@@ -9,7 +9,7 @@ module.exports = {
   compilers: {
     solc: {
       optimizer: {
-        enabled: false,
+        enabled: true,
         runs: 200
       }
     }
