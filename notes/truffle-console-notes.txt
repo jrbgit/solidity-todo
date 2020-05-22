@@ -1,0 +1,37 @@
+todoList = await TodoList.deployed()
+# Returns undefined (but puts contract into todoList variable)
+# await is an async action
+# must do this to work with the contract.
+
+todoList
+# Returns results of the contract
+
+todoList.address
+# returns just the address
+
+todoList.todoCount()
+# get the counter value
+# returns as a Big Number
+
+todoCount = await todoList.todoCount()
+# returns undefined but sets the count to a variable which you can then
+
+todoCount.toNumber()
+# Returns just the number
+
+
+------
+
+task = await todoList.tasks(1)
+# creates variable task with the data from task #1
+
+task
+# returns the data from the previous step
+
+task.details
+# returns task[1] details
+
+task.completed
+# returns task[1] completed bool true/false
+
+-----
